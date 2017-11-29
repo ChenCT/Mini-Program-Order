@@ -1,0 +1,43 @@
+<!--pages/submit/submit.wxml-->
+<view class="container">
+<view class="body-container">
+<view class="body">
+  <view class="header">用餐时间 
+  </view>
+  <view class="order">
+    <view class="title">订单详情</view>
+    <block wx:for="{{orderInfo.order}}" wx:key="">
+      <view class="list">
+        <view class="row1">
+          <view class="name">{{item.name}}</view>
+          <view class="numb">x{{item.numb}}</view>
+        </view>
+        <view class="price">￥{{item.numb*item.price}}</view>
+      </view>  
+    </block>
+    <view class="total">
+      <view class="total-info">总计</view>
+      <view class="total-price">￥{{orderInfo.cost}}</view>
+    </view>
+  </view>
+
+  <view class="ps">
+    <view class="title" style="border:none">备注</view>
+    <textarea placeholder="请输入备注" maxlength="20" style="padding:10rpx;height:5em;background:#F4F4F4;width:100%;"/>
+  </view>
+  
+  </view>
+  </view>
+  
+  
+  <view class="footer">
+    <view class="howMuch">
+      <view class="img" style="background:#FFD161;">
+        <view class="weui-badge" style="position: absolute;top: -.4em;right: -.4em;">{{orderInfo.numb}}</view>
+        <image src="../../image/trolley.png" style="width:60rpx;height:60rpx;"></image>
+      </view>
+      <view class="cost">￥{{orderInfo.cost}}</view>
+    </view>
+    <view class="submit" style="background:#FFD161;" bindtap="submit">提交订单</view>
+  </view>
+</view>

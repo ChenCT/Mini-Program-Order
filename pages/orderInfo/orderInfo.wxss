@@ -1,0 +1,65 @@
+.order, .info{
+  font-size:25rpx;
+  background:white;
+  padding-left:15rpx;
+  margin-top:10px;
+}
+.title {
+  color:#ACACAC;
+  padding:15rpx 0;
+  border-bottom: 1px solid #ACACAC;
+}
+.list {
+  margin-right:15rpx;
+  padding:15rpx 0;
+  border-bottom: 1px solid #ACACAC;
+}
+.list .name,.list .price{
+  font-size:30rpx;
+} 
+.list .row1{
+  display:flex;
+  
+}
+.row1 .name{
+  width:90%;
+  flex:1;
+}
+.row1 .numb{
+  width:10%;
+  text-align:right;
+}
+.list .price{
+  color:red;
+  text-align:right;
+} 
+.total{
+  padding:15rpx;
+  display:flex;
+  font-size: 30rpx;
+  text-align:right;
+}
+.total-info {
+  width:80%;
+  color:#ACACAC;
+}
+.total-price{
+  width:20%;
+  color:red;
+  font-size: 32rpx;
+}
+.info-item{
+  display:flex;
+  border-top:1px solid #ACACAC;
+}
+.info-number, .info-time{
+  line-height:64rpx;
+}
+.info-title{
+  color:#ACACAC;
+  padding:15rpx 0;
+  width:120rpx;
+}
+.bottom{
+  padding-bottom:20rpx;
+}

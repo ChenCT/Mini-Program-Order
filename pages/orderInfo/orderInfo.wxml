@@ -1,0 +1,30 @@
+<view class="container">
+  <view class="order">
+    <view class="title">订单详情</view>
+    <block wx:for="{{orderInfo.order}}" wx:key="">
+      <view class="list">
+        <view class="row1">
+          <view class="name">{{item.name}}</view>
+          <view class="numb">x{{item.numb}}</view>
+        </view>
+        <view class="price">￥{{item.numb*item.price}}</view>
+      </view>  
+    </block>
+    <view class="total bottom">
+      <view class="total-info">总计</view>
+      <view class="total-price">￥{{orderInfo.cost}}</view>
+    </view>
+  </view>
+
+  <view class="info">
+    <view class="info-title" style="border:none">订单信息</view>
+    <view class="info-item">
+      <view class="info-title">订单号码</view>
+      <view class="info-number">AMDL2357492479372347</view>
+    </view>
+    <view class="info-item bottom">
+      <view class="info-title">订单时间</view>
+      <view class="info-time">{{orderInfo.time}}</view>
+    </view>
+  </view> 
+</view>

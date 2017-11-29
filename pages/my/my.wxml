@@ -1,0 +1,23 @@
+<!--pages/my/my.wxml-->
+  <view class="container">
+    <view class="header">
+      <image bindtap= "bindViewTap" class="userinfo-avatar" src= "{{userInfo.avatarUrl}}" background- size="cover" > </image>
+      <text class="userinfo-nickname" > {{userInfo.nickName }}</text>
+    </view>
+
+    <view class="body">
+      <view class="body-item" style="border:none">
+        <image class="img" src="../../image/门店.png" />
+        <text>青田澳门豆捞火锅</text>
+      </view>
+      <view class="body-item">
+        <image class="img" src="../../image/手机.png" />
+        <text>15061887566</text>
+      </view> 
+    </view>
+
+    <view class="footer" bindtap="makePhoneCall">
+      <image class="img" style="width:34rpx;height:34rpx;" src="../../image/电话.png" />
+      <text>订餐电话： 0578-6877777</text>
+    </view>
+  </view>

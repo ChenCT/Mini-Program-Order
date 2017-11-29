@@ -1,0 +1,12 @@
+/**index.wxss**/
+.weui-cell_primary {
+  font-size: 14px;
+}
+
+button{
+  color:white;
+  background:#FFD161;
+  width:80%;
+  text-align:center;
+  margin-top:10px;
+}

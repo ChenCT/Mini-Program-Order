@@ -1,0 +1,63 @@
+<!--index.wxml-->
+<view class="container"> 
+  <view class="page-section page-section-spacing ">
+    <swiper indicator-dots="true" autoplay="true" circular="true" interval="2000" duration="500" style="height:180px">
+      <block wx:for="{{background}}" wx:key="src">
+        <swiper-item>
+          <image class="slide-image" src="{{item.src}}" style="width:100%;height:100%"/>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <button bindtap="makeOrder" hover-class="other-button-hover">开始点餐</button>
+  <!-- <view class="weui-panel weui-panel_acess" bindtap="viewInfo">
+    <view class="weui-panel_bd"> 
+      <view class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active" > 
+        <view class="weui-media-box_hd weui-media-box__hd_in-appmsg"> 
+          <image class="weui-media-box_thumb" src="pics/icon.jpg" style="width:60px;height:60px"/>
+        </view>
+        <view class="weui-media-box_bd"> 
+          <view class="weui-media-box__title">青田澳门豆捞火锅</view>
+          <view class="weui-media-box__desc">人均 ￥80</view>
+        </view>
+      </view>
+    </view>
+  </view> -->
+  <view class="weui-panel">
+    <view class="weui-panel__bd">
+        <view class="weui-media-box weui-media-box_small-appmsg">
+            <view class="weui-cells weui-cells_in-small-appmsg">
+                <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active" bindtap="openLocation">
+                    <view class="weui-cell__hd"><image src="pics/location.png" style="width: 20px;height: 20px;margin-right: 5px" /></view>
+                    <view class="weui-cell__bd weui-cell_primary">
+                        <view>浙江省丽水市青田县鹤城镇圣旨街63号</view>
+                    </view>
+                    <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+                </navigator>
+                <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active" bindtap="makePhoneCall">
+                    <view class="weui-cell__hd"><image src="pics/phone.png" style="width: 20px;height: 20px;margin-right: 5px" /></view>
+                    <view class="weui-cell__bd weui-cell_primary">
+                        <view>0578-6877777</view>
+                    </view>
+                    <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+                </navigator>
+                <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                    <view class="weui-cell__hd"><image src="pics/time.png" style="width: 20px;height: 20px;margin-right: 5px" /></view>
+                    <view class="weui-cell__bd weui-cell_primary">
+                        <view>10:00—凌晨2:00</view>
+                    </view>
+                </navigator>
+            </view>
+        </view>
+    </view>
+</view>
+
+</view>
+
+
+
+
+
+
+
+

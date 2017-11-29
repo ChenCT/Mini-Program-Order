@@ -1,0 +1,27 @@
+<!--pages/orderList/orderList.wxml-->
+<view class="container">
+  <view wx:if="{{orderInfo==null}}">
+    当前暂无订单哦~
+  </view>
+  <view wx:else>
+    <block wx:for="{{orderInfo}}" wx:key="index">
+      <view class="list">
+        <view class="list-header">
+          <view class="list-header-place">青田澳门豆捞火锅</view>
+          <view class="list-header-state">已完成</view>
+        </view>
+        <view class="list-body">
+          <view class="list-body-products">
+            <view class="list-body-product">{{orderInfo[index].order[0].name}}等{{orderInfo[index].numb}}件商品</view>
+            <view class="list-body-cost">￥{{orderInfo[index].cost}}</view> 
+          </view>
+          <view class="list-body-time">
+            <view class="list-body-tim">{{orderInfo[index].time}}</view>
+            <button class="list-body-more" catchtap="moreInfo" data-index="{{index}}" hover-class="other-button-hover"> 查看详情 </button>
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
+  
+</view>

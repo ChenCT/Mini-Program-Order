@@ -1,0 +1,53 @@
+.container{
+  padding-top:20rpx;
+  font-size:30rpx;
+}
+.list{
+  background: white;
+  border-radius:20rpx;
+  width:90%;
+  height:220rpx;
+  border:1px solid #ACACAC ;
+  margin:auto;
+  margin-bottom:20rpx;
+  padding:22rpx 22rpx 15rpx;
+}
+.list-header{
+  display:flex;
+  border-bottom:1px solid #ACACAC ;
+  padding-bottom:10rpx;
+}
+.list-header-place{
+  width:80%;
+  color:#ACACAC;
+}
+.list-header-state{
+  width:20%;
+  text-align:right;
+  color:#FFD161;
+}
+.list-body{
+  padding:20rpx 0;
+}
+.list-body-products, .list-body-time{
+  display:flex;
+  margin-bottom:20rpx;
+}
+.list-body-product, .list-body-tim{
+  width:80%;
+}
+.list-body-cost,.list-body-more{
+  width:20%;
+  text-align:right;
+}
+.list-body-cost{
+  color:#ACACAC;
+}
+.list-body-more{
+  color:white;
+  font-size: 30rpx;
+  background:#FFD161;
+  width:200rpx;
+  line-height:60rpx;
+  text-align:center;
+}

@@ -1,0 +1,251 @@
+/* pages/order/order.wxss */
+.orderPage {
+  display: flex;
+  height: auto;
+}
+.sideBar {
+  width: 150rpx;
+  height: 1130rpx;
+  background: #F4F4F4;
+}
+
+.menuList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.menuList .menu {
+  height: 100rpx;
+  width: 130rpx;
+  position: relative;
+  text-align: center;
+  line-height: 100rpx;
+  font-size: 28rpx;
+  border-bottom: 1rpx dashed #ECECEC;
+}
+.selected.menu::before {
+  content: "";
+  position: absolute;
+  left: -10rpx; 
+  top: 32rpx; 
+  height: 36rpx; 
+  width: 7rpx;
+  background: #FFD161;
+}
+.foodList {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: #ECECEC;
+}
+.foodList .img{
+  width:120rpx;
+  height: 120rpx;
+}
+
+.foodList .title {
+  padding: 15rpx;
+  height: 25rpx;
+  line-height: 25rpx;
+  font-size: 25rpx;
+}
+.food {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 170rpx;
+  border-bottom: 1rpx solid #ECECEC;
+  background: white;
+}
+.food::before {
+  content: "";
+  width: 15rpx;
+  left: -15rpx;
+  top: 0;
+  border: 1px solid white;
+}
+.food-info {
+  padding-left: 15rpx;
+  line-height: 48rpx;
+  flex: 1;
+}
+.food-info .name {
+  font-size:30rpx;
+}
+.food-info .price {
+  font-size:30rpx;
+  color:red;
+}
+.food-info .sales {
+  font-size: 25rpx;
+  color: #ACACAC;
+}
+.food-numb {
+  height: 40rpx;
+  width: 130rpx;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 95rpx;
+  margin-right: 30rpx;
+  line-height: 40rpx;
+  font-size: 25rpx;
+}
+.food-numb .add,
+.food-numb .remove {
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 30rpx;
+  text-align: center;
+} 
+.food-numb .add {
+  font-size: 35rpx;
+  line-height:42rpx;
+  font-weight: 700;
+  background: #FFD161;
+  margin-left: 15rpx;
+}
+.food-numb .remove {
+  margin-right: 15rpx;
+  line-height: 28rpx;
+  font-size: 60rpx;
+  font-weight: 500;
+  box-sizing: border-box;
+  border: 2rpx;
+  border-style: solid;
+  border-color: #B0B0B0;
+  color: #B0B0B0;
+} 
+.footer{
+  position:absolute;
+  bottom:0;
+  right: 0;
+  left: 0;
+  display:flex;
+  height: 100rpx;
+  z-index: 2000;
+}
+.footer .img {
+  position: absolute;
+  height: 90rpx;
+  width: 90rpx;
+  border-radius: 100rpx;
+  left: 20rpx;
+  top: -45rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.orderPage .howMuch {
+  position: relative;
+  flex: 1;
+  font-size: 28rpx;
+  background: white;
+  line-height: 100rpx;
+  padding-left: 130rpx;
+}
+.footer .pay {
+  width: 200rpx;
+  text-align: center;
+  line-height: 100rpx;
+  color: white;
+  font-size: 30rpx;
+  background: #CCCCCC;
+}
+.orderPage .cost {
+  margin-top: 10rpx;
+  color: red;
+  font-size: 50rpx;
+  line-height: 50rpx;
+  height: 50rpx;
+  width: 100rpx;
+} 
+.orderInfo{
+  position:absolute;
+  bottom:100rpx;
+  right: 0;
+  left: 0;
+  z-index: 2000;
+}
+.orderItem{
+  display:flex;
+  background:white;
+  border-bottom:1px solid #ACACAC;
+  padding:15rpx;
+}
+.orderItem-name{
+  width:60%;
+  margin-left:10rpx;
+}
+.orderItem-price{
+  width:20%;
+}
+.orderItem-remove,.orderItem-add{
+  width:40rpx;
+  height:40rpx;
+  border-radius:30rpx;
+  text-align:center;
+}
+.orderItem-remove{
+  line-height:28rpx;
+  font-size:60rpx;
+  font-weight:500;
+  box-sizing:border-box;
+  border:2rpx solid #B0B0B0;
+  color:#B0B0B0;
+}
+.orderItem-number{}
+.orderItem-add{
+  font-size:35rpx;
+  line-height:42rpx;
+  font-weight:700;
+  background:#FFD161;
+  margin-left:15rpx;
+}
+.orderInfo-footer{
+  background:#F4F4F4;
+  text-align:center;
+}
+.orderInfo-header{
+  padding:8rpx 17rpx;
+  background:#F4F4F4;
+  display:flex;
+  justify-content:center;
+}
+.orderInfo-header-title{
+  width:60%;
+}
+.orderInfo-header-empty{
+  width:40%;
+  text-align:right;
+  font-size:25rpx;
+}
+.orderInfo-body {
+  max-height: 430rpx;
+  overflow:auto;
+}
+/*使屏幕变暗  */
+.commodity_screen {
+  width: 100%;
+  height: 90%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.2;
+  overflow: hidden;
+  z-index: 1000;
+  color: #fff;
+}
+/*对话框 */
+.commodity_attr_box {
+  width: 100%;
+  overflow: hidden;
+  position: fixed;
+  bottom:100rpx;
+  left: 0;
+  z-index: 2000;
+  background: #fff;
+  /* padding-top: 20rpx; */
+}
+
